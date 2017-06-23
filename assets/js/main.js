@@ -49,11 +49,12 @@ function loadLogo(scale, elementId, firstColor, secondColor){
 
 $('.navbar-brand').on('click', function(){
 	animateLogo('logo');
-})
+});
 
 $(document).ready(function(){
     // the body of this function is in assets/js/now-ui-kit.js
 	loadLogo(3, 'logo-banner', 'FFF', 'DDD');
 	loadLogo(1, 'logo', 'FFF', 'DDD');
 	loadLogo(1, 'logo-dark', 'FF3636', 'f85019');
+    new WOW().init();
 });
