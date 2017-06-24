@@ -65,17 +65,7 @@ $(document).ready(function () {
     loadLogo(1, 'logo', 'FFF', 'DDD');
     loadLogo(1, 'logo-dark', 'FF3636', 'f85019');
 
-    var path = anime.path('#motionPath path');
 
-    var motionPath = anime({
-        targets: '#motionPath .el',
-        translateX: path('x'),
-        translateY: path('y'),
-        rotate: path('angle'),
-        easing: 'linear',
-        duration: 5000,
-        loop: true
-    });
 
     new WOW().init();
 });
