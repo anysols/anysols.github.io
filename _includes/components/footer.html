@@ -1,24 +1,24 @@
- <footer class="footer" data-background-color="black">
+ <footer class="footer {% if page.root != true %}footer-default{% endif %}" {% if page.root == true %}data-background-color="black"{% endif %}>
 	<div class="container">
 		<nav>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="{{ site.baseurl }}{% if page.root != true %}/{% endif %}#">
 						{{site.title}}
 					</a>
 				</li>
 				<li>
-					<a href="#hash-about">
+					<a href="{{ site.baseurl }}{% if page.root != true %}/{% endif %}#hash-about">
 						About Us
 					</a>
 				</li>
 				<li>
-					<a href="http://blog.creative-tim.com">
+					<a href="{{ site.baseurl }}{% if page.root != true %}/{% endif %}blog/">
 						Blog
 					</a>
 				</li>
 				<li>
-					<a href="/license.txt">
+					<a href="{{ site.baseurl }}{% if page.root != true %}/{% endif %}license.txt">
 						MIT License
 					</a>
 				</li>

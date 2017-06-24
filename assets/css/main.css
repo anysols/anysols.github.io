@@ -486,3 +486,111 @@
 .scroll-down-arrow:hover {
     text-decoration: none
 }
+
+.square,
+.circle {
+    pointer-events: none;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    background-color: currentColor;
+    font-size: 12px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.triangle {
+    pointer-events: none;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 14px 24px 14px;
+    border-color: transparent transparent currentColor transparent;
+}
+
+.shadow {
+    position: absolute;
+    opacity: .2;
+}
+
+.motion-path {
+    position: relative;
+    width: 256px;
+    margin: 20px auto auto;
+}
+
+.small-box {
+    width: 18px;
+    height: 18px;
+}
+
+.follow-path {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+}
+
+.color-01 {
+    color: #FF1461;
+}
+
+/* Red */
+.color-02 {
+    color: #FF7C72;
+}
+
+/* Orange */
+.color-03 {
+    color: #FBF38C;
+}
+
+/* Yellow */
+.color-04 {
+    color: #A6FF8F;
+}
+
+/* Citrus */
+.color-05 {
+    color: #18FF92;
+}
+
+/* Green */
+.color-06 {
+    color: #1CE2B2;
+}
+
+/* Darkgreen */
+.color-07 {
+    color: #5EF3FB;
+}
+
+/* Turquoise */
+.color-08 {
+    color: #61C3FF;
+}
+
+/* Lightblue */
+.color-09 {
+    color: #5A87FF;
+}
+
+/* Blue */
+.color-10 {
+    color: #8453E3;
+}
+
+/* Purple */
+.color-11 {
+    color: #C26EFF;
+}
+
+/* Lavender */
+.color-12 {
+    color: #FB89FB;
+}
+
+/* Pink */

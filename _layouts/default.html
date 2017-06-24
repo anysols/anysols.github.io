@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<body id=body itemscope itemtype="http://schema.org/WebPage">
-{{ content }}
-</body>
+---
+layout: base
+---
+<div>
+    {% include components/header.html %}
+    <div class="wrapper">
+        {{ content }}
+        {% include components/footer.html %}
+    </div>
+</div>
+{% include scripts.html %}
