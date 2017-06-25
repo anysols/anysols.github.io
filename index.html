@@ -227,19 +227,19 @@ scripts: ['index.js']
                                         <span class="input-group-addon">
                                             <i class="now-ui-icons users_circle-08"></i>
                                         </span>
-                                <input type="text" class="form-control" placeholder="First Name...">
+                                <input type="text" class="form-control" placeholder="Name..." id="contact-form-name" autocomplete="off">
                             </div>
                             <div class="input-group form-group-no-border">
                                         <span class="input-group-addon">
                                             <i class="now-ui-icons ui-1_email-85"></i>
                                         </span>
-                                <input type="text" class="form-control" placeholder="Email...">
+                                <input type="email" class="form-control" placeholder="Email..." id="contact-form-email" autocomplete="off">
                             </div>
                             <div class="input-group form-group-no-border">
                                         <span class="input-group-addon">
                                             <i class="fa fa-edit"></i>
                                         </span>
-                                <textarea placeholder="Message..." class="form-control"></textarea>
+                                <textarea placeholder="Message..." class="form-control" id="contact-form-message" autocomplete="off"></textarea>
                             </div>
                             <!-- If you want to add a checkbox to this form, uncomment this code -->
                             <!-- <div class="checkbox">
@@ -250,7 +250,23 @@ scripts: ['index.js']
                                 </div> -->
                         </div>
                         <div class="footer text-center">
-                            <a href="#pablo" class="btn btn-neutral btn-round btn-lg">Send</a>
+                            <div class="alert alert-danger hidden-xs-up" role="alert" id="contact-form-error">
+								<div class="container">
+									<div class="alert-icon">
+										<i class="now-ui-icons objects_support-17"></i>
+									</div>
+									<strong>Oh snap!</strong> <span id="contact-form-error-message"></span>
+								</div>
+							</div>
+							<div class="alert alert-success" role="alert">
+								<div class="container">
+									<div class="alert-icon">
+										<i class="now-ui-icons ui-2_like"></i>
+									</div>
+									<strong>Sent!</strong> You message is delivery, we will get back to you as soon as possible.
+								</div>
+							</div>
+							<button class="btn btn-neutral btn-round btn-lg" id="contact-form-send" type="button">Send</button>
                         </div>
                     </form>
                 </div>
