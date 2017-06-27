@@ -66,6 +66,6 @@ $(document).ready(function () {
     loadLogo(1, 'logo-dark', 'FF3636', 'f85019');
 
 
-
     new WOW().init();
+    Prism.highlightAll();
 });

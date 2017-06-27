@@ -17,6 +17,7 @@ css: /assets/css
 js: /assets/js
 img: /assets/img
 font: /assets/font
+bower:    /assets/bower_components
 
 
 

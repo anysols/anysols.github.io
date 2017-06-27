@@ -6,7 +6,8 @@ description: My running commentary on work and personal topics, including progra
 change_frequency: always
 ---
 <div class="page-header page-header-small">
-    <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/bg3.jpg');background-color: #311b92">
+    <div class="page-header-image" data-parallax="true"
+         style="background-image: url('../assets/img/bg3.jpg');background-color: #311b92">
     </div>
     <div class="container">
         <div class="content-center">
@@ -25,8 +26,13 @@ change_frequency: always
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="title"><a class="no-underline" href="{{ site.baseurl }}{{ post.url }}"
-                                             title="{{ post.title }}">{{ post.title }}</a></h4>
+                        <h2 class="title">
+                            <a class="no-underline"
+                               href="{{ site.baseurl }}{{ post.url }}"
+                               title="{{ post.title }}">{{ post.title }}
+                            </a>
+                        </h2>
+                        <p class="description">{{ post.description }} <a href="{{ site.baseurl }}{{ post.url }}">read more</a>.</p>
                         <small class="text-muted">
                             Posted on {{ post.date | date: "%B %-d, %Y" }}
                             &ndash; <a href="{{ site.baseurl }}/blog/{{ post.categories[1] }}">{{ post.categories[1] |

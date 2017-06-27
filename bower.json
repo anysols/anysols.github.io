@@ -1,0 +1,20 @@
+{
+  "name": "shivajivarma.com",
+  "version": "0.0.0",
+  "authors": [
+    "Shivaji Varma <contact@shivajivarma.com>"
+  ],
+  "description": "website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
