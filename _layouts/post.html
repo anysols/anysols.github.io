@@ -4,6 +4,16 @@ layout: base
 <div class="post">
     {% include components/header.html %}
     <div class="wrapper">
+        <div class="page-header page-header-small">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/bg2.jpg');background-color: #311b92">
+            </div>
+            <div class="container">
+                <div class="content-center">
+                    <h1 class="title">{{ page.title }}</h1>
+
+                </div>
+            </div>
+        </div>
         {{ content }}
         {% include components/footer.html %}
     </div>
