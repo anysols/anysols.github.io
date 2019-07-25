@@ -53,7 +53,7 @@ $(document).ready(function () {
 			
 			$.ajax({
 				  type: 'POST',
-				  url: "http://anysols-india.appspot.com",
+				  url: "https://anysols-india.appspot.com",
 				  data: {subject: 'Contact Form', sender: sender, name: name, message: message,client:'00991af838dc88386' + 'd5dfdaed62a47cc'},
 				  dataType: "text",
 				  success: function(resultData) { 
